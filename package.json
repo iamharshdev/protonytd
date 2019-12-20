@@ -1,0 +1,22 @@
+{
+  "name": "proton",
+  "version": "1.0.0",
+  "description": "A Node.js application to download YouTube videos",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "server":"node index.js"
+  },
+  "author": "Harsh VArdhan",
+  "license": "ISC",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "ytdl-core": "^0.29.7"
+  },
+  "devDependencies": {},
+  "engines": {
+    "node":"10.15.2"
+  },
+  "keywords": []
+}

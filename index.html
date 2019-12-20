@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>YouTube Downloader</title>
+        <meta charset="utf-8" />
+        <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+        <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet" type='text/css' integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <link rel="stylesheet" type="text/css" href="/static/css/style.css">
+    </head>
+    <body>
+
+        <div class="container">
+          <form action="/download" method="GET" name="ytd-dwn" id="dwn-form">
+            <h1>Download Video and Audio from YouTube</h1>      
+            <img src="https://img.etimg.com/thumb/msid-69533333,width-643,imgsize-35861,resizemode-4/cant-spot-a-youtube-channel-creators-struck-by-massive-account-hijacks-tweet-complaints.jpg">
+                  <input class="form-control" type="text" name="url" placeholder="https://www.youtube.com/watch?v=MtN1YnoL46Q" required />
+                  <div class="option-format">
+                      <input type="radio" name="format" value="mp3" class="option-input">
+                <h4>Download as mp3</h4></div>
+                <div class="option-format">
+                    <input type="radio" name="format" value="mp4" class="option-input" la>
+              <h4>Download as mp4</h4></div>
+              <div class="w-100"><input class="btn btn-primary" type="submit" value="Download" /></div>  
+          </form>
+        </div>
+    </body>
+</html>
